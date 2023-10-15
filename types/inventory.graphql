@@ -1,0 +1,12 @@
+type Inventory implements Node {
+    """
+    A globally unique identifier. Can be used in various places throughout the system to identify this single value.
+    """
+    nodeId: ID!
+    uuid: UUID!
+    name: String!
+    userId: UUID!
+    isDefault: Boolean!
+    created: Time!
+    updated: Time!
+}

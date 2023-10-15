@@ -1,0 +1,6 @@
+enum CardFinish {
+    NON_FOIL
+    FOIL
+    ETCHED
+    GLOSSY
+}

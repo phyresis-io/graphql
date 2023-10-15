@@ -11,6 +11,8 @@ interface Node {
   """
   nodeId: ID!
   uuid: UUID!
+  created: Time!
+  updated: Time!
 }
 
 type Query {

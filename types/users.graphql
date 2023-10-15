@@ -1,0 +1,8 @@
+type User implements Node {
+    nodeId: ID!
+    uuid: UUID!
+    name: String!
+    email: String!
+    created: Time!
+    updated: Time!
+}

@@ -1,0 +1,26 @@
+type CardRecord implements Node {
+    """
+    A globally unique identifier. Can be used in various places throughout the system to identify this single value.
+    """
+    nodeId: ID!
+    uuid: UUID!
+
+    inventoryId: UUID!
+    scryfallId: UUID!
+
+    name: String!
+    setCode: String!
+
+    quantity: Int!
+    finish: CardFinish!
+    language: String!
+    quality: String!
+
+    proxy: Boolean!
+    alter: Boolean!
+    signed: Boolean!
+    notes: String
+
+    created: Time!
+    updated: Time!
+}
