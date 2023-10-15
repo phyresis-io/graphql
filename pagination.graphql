@@ -5,16 +5,6 @@ type PageInfo {
   count: Int
 }
 
-interface Node {
-  """
-  A globally unique identifier. Can be used in various places throughout the system to identify this single value.
-  """
-  nodeId: ID!
-  id: BigInt!
-  created: Time!
-  updated: Time!
-}
-
 interface Edge {
   cursor: ID!
   node: Node
