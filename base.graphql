@@ -3,11 +3,14 @@ A point in time as described by the [RFC3339Nano](https://www.rfc-editor.org/rfc
 """
 scalar Time
 
+scalar UUID
+
 interface Node {
   """
   A globally unique identifier. Can be used in various places throughout the system to identify this single value.
   """
   nodeId: ID!
+  uuid: UUID!
 }
 
 type Query {
