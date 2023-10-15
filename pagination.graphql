@@ -1,0 +1,36 @@
+type PageInfo {
+  startCursor: ID!
+  endCursor: ID!
+  hasNextPage: Boolean
+  count: Int
+}
+
+interface Node {
+  """
+  A globally unique identifier. Can be used in various places throughout the system to identify this single value.
+  """
+  nodeId: ID!
+  id: BigInt!
+  created: Time!
+  updated: Time!
+}
+
+interface Edge {
+  cursor: ID!
+  node: Node
+}
+
+interface Connection {
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+  """
+  A list of edges.
+  """
+  edges: [Edge!]!
+  """
+  A list of nodes in the connection (without going through the \`edges\` field).
+  """
+  nodes: [Node!]!
+}

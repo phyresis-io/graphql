@@ -1,0 +1,12 @@
+"""
+A point in time as described by the [RFC3339Nano](https://www.rfc-editor.org/rfc/rfc3339) standard.
+"""
+scalar Time
+
+type Query {
+  status: String
+}
+
+type Mutation {
+  status: String
+}
